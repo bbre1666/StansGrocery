@@ -12,7 +12,6 @@ Imports System.Timers
 'https://github.com/bbre1666/StansGrocery.git
 
 
-
 Public Class StansGrocery
 
 
@@ -115,6 +114,7 @@ Public Class StansGrocery
 
     Private Sub FilterComboBox_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles FilterComboBox.SelectionChangeCommitted
 
+        SearchValue = DisplayListBox.Items.OfType(Of String).ToArray
 
         DisplayListBox.Items.Clear() ' clears the list box
 
@@ -261,4 +261,5 @@ Public Class StansGrocery
         Me.Hide() 'closes stans form
         AboutForm.Show() 'shows about form
     End Sub
+
 End Class

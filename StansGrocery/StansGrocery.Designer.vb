@@ -38,6 +38,7 @@ Partial Class StansGrocery
         Me.DisplayListBox = New System.Windows.Forms.ListBox()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.OpenFileDialog = New System.Windows.Forms.OpenFileDialog()
+        Me.ExitButton = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.SearchGroupBox.SuspendLayout()
         Me.SuspendLayout()
@@ -81,7 +82,7 @@ Partial Class StansGrocery
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(133, 26)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.AboutToolStripMenuItem.Text = "About"
         '
         'SearchTextBox
@@ -155,11 +156,21 @@ Partial Class StansGrocery
         '
         Me.OpenFileDialog.FileName = "OpenFileDialog"
         '
+        'ExitButton
+        '
+        Me.ExitButton.Location = New System.Drawing.Point(49, 335)
+        Me.ExitButton.Name = "ExitButton"
+        Me.ExitButton.Size = New System.Drawing.Size(193, 88)
+        Me.ExitButton.TabIndex = 7
+        Me.ExitButton.Text = "Exit"
+        Me.ExitButton.UseVisualStyleBackColor = True
+        '
         'StansGrocery
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(815, 545)
+        Me.Controls.Add(Me.ExitButton)
         Me.Controls.Add(Me.DisplayListBox)
         Me.Controls.Add(Me.SearchGroupBox)
         Me.Controls.Add(Me.SearchButton)
@@ -193,4 +204,5 @@ Partial Class StansGrocery
     Friend WithEvents ToolTip1 As ToolTip
     Friend WithEvents OpenFileDialog As OpenFileDialog
     Friend WithEvents SearchGroupBox As GroupBox
+    Friend WithEvents ExitButton As Button
 End Class
